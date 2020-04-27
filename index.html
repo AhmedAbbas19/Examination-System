@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
+    <title>ITI Exam</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container u-flex">
+            <div class="navbar__logo">
+                <a href="index.html"><img src="images/logo.png" alt=""></a>
+            </div>
+            <div class="navbar__title">
+                <h1 id="test-title">Registeration</h1>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="myForm">
+        <div class="container">
+            <form action="questions.html" class="form-group" method="GET" onsubmit="return AppController.formValidation()">
+                <label for="username">UserName</label>
+                <input type="text" name="username" id="username" class="form-group__input" onfocus="AppController.focusHandler(this)" autofocus>
+                <label for="natID">National ID</label>
+                <input type="text" name="natID" id="natID" class="form-group__input" onfocus="AppController.focusHandler(this)">
+                <input type="submit" value="Register" class="btn btn--radius btn--primary btn--sm">
+            </form>
+            <div class="error">
+                <ul class="error__list">
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

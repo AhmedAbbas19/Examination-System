@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ITI Exam</title>
+</head>
+<body onload="AppController.startExam()">
+    
+    <!-- Header -->
+    <nav class="navbar">
+        <div class="container u-flex">
+            <div class="navbar__logo">
+                <a href="index.html"><img src="images/logo.png" alt=""></a>
+            </div>
+            <div class="navbar__title">
+                <h1 id="test-title">404</h1>
+            </div>
+            <div class="navbar__timer"><i class="far fa-clock"></i><span id="timeout">####</span></div>
+        </div>
+    </nav>
+
+    
+
+
+    <!-- Questions Section -->
+    <div class="exam-area u-flex">
+        <div class="question" id="4">
+            <h3 class="question__number">You don't have the permission to see this page!</h3>
+            <div class="question__area">
+                <p class="question__head">this is a dummy question ? <!--<span id="skip-ntn"><i class="fas fa-thumbtack"></i></span>--></p>
+                <div class="question__answer" id="ans-0">
+                    <input type="radio" name="answer" value="red" id="in-0"><span class="checkmark"></span>
+                    <label for="in-0">Red</label>
+                </div>
+                <div class="question__answer" id="ans-1">
+                    <input type="radio" name="answer" value="green" id="in-1"><span class="checkmark"></span>
+                    <label for="in-1">Green</label>
+                </div>
+                <div class="question__answer" id="ans-2">
+                    <input type="radio" name="answer" value="blue" id="in-2"><span class="checkmark"></span>
+                    <label for="in-2">Blue</label>
+                </div>
+                <div class="question__answer" id="ans-3">
+                    <input type="radio" name="answer" value="yellow" id="in-3"><span class="checkmark"></span>
+                    <label for="in-3">Yellow</label>
+                </div>
+            </div>
+            <div class="question__nav u-flex">
+                <button class="btn btn--radius btn--hover-left btn--primary btn--xs btn--disabled" id="prev-btn">Prev</button>
+                <span id="current-question"># / ##</span>
+                <button class="btn btn--radius btn--hover-right btn--primary btn--xs" id="next-btn">Next</button>
+                <button class="btn btn--radius btn--hover-right btn--primary btn--xs" id="finish-btn">Finish</button>
+            </div>
+        </div>
+        <!-- Skipped Section -->
+        <div class="unsolved">
+            <h3 class="unsolved__title">Unsolved Questions <span class="unsolved__count">0</span></h3>
+            <ul>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- Result Section -->
+    <div class="exam-result">
+        <img src="" alt="">
+        <p class="exam-result__title"></p>
+        <p class="exam-result__score"></p>
+        <p class="exam-result__time"></p>
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
