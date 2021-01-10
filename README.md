@@ -1,3 +1,3 @@
-# Dashboard
+# Examination System
 
 ![Screenshot](screenshot.png)
